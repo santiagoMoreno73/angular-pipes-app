@@ -4,4 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-basics',
   templateUrl: './basics.component.html',
 })
-export class BasicsComponent {}
+export class BasicsComponent {
+  phraseLower: string = 'lowercase to uppercase letter';
+  phraseUpper: string = 'UPPERCASE LETTER TO LOWERCASE';
+  phraseFull: string = 'LetTER WitH ErrOrS';
+}
