@@ -4,4 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-numbers',
   templateUrl: './numbers.component.html',
 })
-export class NumbersComponent {}
+export class NumbersComponent {
+  netSales: number = 245769845.989;
+  percent: number = 0.4856;
+}
