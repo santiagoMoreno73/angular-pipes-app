@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+// pipes
+import { CapitalLetterPipe } from './pipes/capital.pipe';
+
 // modules
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
@@ -16,6 +19,7 @@ import { OrderComponent } from './pages/order/order.component';
     NoCommonComponent,
     BasicsComponent,
     OrderComponent,
+    CapitalLetterPipe
   ],
   imports: [CommonModule, PrimeNgModule],
   exports: [
