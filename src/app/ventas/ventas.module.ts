@@ -12,16 +12,22 @@ import { NumbersComponent } from './pages/numbers/numbers.component';
 import { NoCommonComponent } from './pages/no-common/no-common.component';
 import { BasicsComponent } from './pages/basics/basics.component';
 import { OrderComponent } from './pages/order/order.component';
+import { FlyPipe } from './pipes/fly.pipe';
+import { OrderPipe } from './pipes/order.pipe';
 
 @NgModule({
+  imports: [CommonModule, PrimeNgModule],
   declarations: [
     NumbersComponent,
     NoCommonComponent,
     BasicsComponent,
     OrderComponent,
-    CapitalLetterPipe
+
+    // pipes
+    CapitalLetterPipe,
+    FlyPipe,
+    OrderPipe
   ],
-  imports: [CommonModule, PrimeNgModule],
   exports: [
     NumbersComponent,
     NoCommonComponent,
