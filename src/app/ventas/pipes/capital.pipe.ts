@@ -4,7 +4,7 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'capitalletter',
 })
 export class CapitalLetterPipe implements PipeTransform {
-  transform(): string {
-    return 'Hi World';
+  transform(value: string, isUpper?: boolean): string {
+    return isUpper ? value.toUpperCase() : value.toLowerCase();
   }
 }
